@@ -1,0 +1,30 @@
+/*全局作用域命名规则common- 加上文件路径名称 */
+
+/*banner 轮播图相关*/
+.common-web-index-banner .swiper-slide img{
+	display: block;
+	width: 100%;
+	/*height: auto;*/
+	cursor: pointer;
+}
+
+.common-web-index-banner .swiper-container-horizontal > .swiper-pagination-bullets{
+	bottom: 15px;
+	text-align: right;
+	box-sizing:border-box;
+	padding-right: 30px;
+}
+
+.common-web-index-banner .swiper-pagination-bullet{
+	margin: 0 5px;
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	border: 1px solid #FFFFFF;
+	opacity: 1;
+}
+
+.common-web-index-banner .swiper-pagination-bullet-active{
+	background: #FB683C;
+	border: 1px solid #FFFFFF;
+}

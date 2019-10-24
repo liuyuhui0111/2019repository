@@ -1,0 +1,23 @@
+.pagination {
+  width: 100%;
+  text-align: right;
+  margin: 10px 0;
+
+  /deep/ .el-select--mini {
+    .el-input__inner {
+      height: 22px !important;
+      line-height: 22px !important;
+    }
+  }
+
+  /deep/ .el-pagination.is-background .el-pager li:not(.disabled).active {
+    // background-color: #33c8df;
+    background: transparent!important;
+    color: #33c8df!important;
+  }
+
+  .el-input__inner {
+    height: 22px !important;
+    line-height: 22px !important;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="pragma" content="no-cache" />
+　　<meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Keywords" content="优税学院,财税公开课,财税培训,税务管理课程,税务名师,cpa,在线学会计,会计学习,注册会计师考试，税务课程，税务精英，高顿课程">
+    <meta name="description" content="大象优税学院携手财税权威名师倾力打造精品税务课程，汇集国内外优质财税视频资源，搭建企业财务沟通互动及学习的桥梁，包括财税公开课、CFO实战分享、税务管理、税务申报等公开课程及在线学习机会。" />
+    <title id="<%= BASE_URL %>">优税学院|财税公开课|CPA在线培训|税务课程-大象优税</title>
+    <script>
+      // 动态插入专家js
+    (function(window){
+      window.rongCloudConfig = function(config){
+        if(window.rongCloudConfigData && window.initRongCloud){
+          window.initRongCloud(config)
+          return;
+        }else{
+          window.rongCloudConfigData = config;
+          var script = document.createElement('script');
+          script.src = config.host + '/expertclient/rongCloudInit.js'
+          script.type = 'text/javascript';
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      }
+    })(window)
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>浏览器js被禁用，请更换浏览器尝试访问本页面</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+    if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+        var path = document.getElementsByTagName('title')[0].id;
+        window.location.href = '..'+path+'update.html';
+    }
+    </script>
+  </body>
+</html>

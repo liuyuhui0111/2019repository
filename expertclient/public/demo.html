@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		 (function(window){
+      window.rongCloudConfig = function(config){
+        if(window.rongCloudConfigData && window.initRongCloud){
+          window.initRongCloud(config)
+          return;
+        }else{
+          window.rongCloudConfigData = config;
+          var script = document.createElement('script');
+          script.src = config.host + '/expertclient/rongCloudInit.js'
+          script.type = 'text/javascript';
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      }
+    })(window)
+
+
+    var params = {host:'http://test.5ifapiao.com:8888'}
+    window.rongCloudConfig(params);
+	</script>
+</head>
+<body>
+	<div id="initRongCloud">唤起聊天窗</div>
+	<script>
+	 document.getElementById("initRongCloud").addEventListener("click",function(){
+	 	initRongCloudFn();
+	 })
+		function initRongCloudFn(){
+			var initParams = {
+				host: "http://test.5ifapiao.com:8888",
+				token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlIjoibWFkZSBieSBoZWF2ZW4iLCJ1c2VyX25hbWUiOiJsODQ5NjQzMDhAMTYzLmNvbUNQIiwic2NvcGUiOlsic2VydmVyIl0sInVzZXJUeXBlIjoiQyIsImV4cCI6MTU2Njk5NjY5MCwidXNlcklkIjoxNjQ1LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiYzVhMzZhODMtZmE1YS00YWJjLWEwNzYtN2QyZjY3MWE1ZDQ4IiwiY2xpZW50X2lkIjoiZmF0YyJ9.LumHu6_HWIjal2nmPgN7G-FETdVSl8ZExfpUfWP3_Zw",
+				channelFrom: 1624,
+				distributorId: "430100004",
+			} 
+			if(window.initRongCloud){
+				window.initRongCloud(initParams);
+			}
+		}
+	</script>
+</body>
+</html>

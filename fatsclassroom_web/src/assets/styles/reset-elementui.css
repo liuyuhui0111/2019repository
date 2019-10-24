@@ -1,0 +1,262 @@
+/*重置element-ui样式 注意命名空间*/
+/*全局作用域命名空间规则common- 加上文件路径名称 */
+/*重置头部*/
+.common-web-layout .el-header{
+		height: 60px;
+    cursor: default;
+    box-shadow: 0 1px 0 0 #D4D4D4;
+}
+
+/*重置底部*/
+.common-web-layout .el-footer{
+	height: 176px;
+  background: #F7F7F7;
+  line-height: 22px;
+  font-size: 16px;
+  color: #444444;
+  letter-spacing: 0;
+}
+/*重置关闭按钮icon*/
+.el-icon-close{
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/*重置表单*/
+.el-cascader{
+  width: 100%;
+}
+/*.el-form-item{
+  margin-bottom: 0;
+}*/
+
+.el-form-item__content{
+  width: 100%;
+  line-height: 30px;
+}
+.el-form-item__label{
+  line-height: 32px;
+  font-size: 14px;
+  color: #444;
+}
+.el-input__inner{
+  height: 32px;
+  line-height: 32px;
+  color: #444;
+}
+body .el-pagination button, body .el-pagination span:not([class*=suffix]),
+body .el-pagination .btn-next:after, body .el-pagination .btn-prev:after{
+  line-height: 30px;
+}
+
+.el-message-box__btns button:nth-child(2),
+.common-conifrm-box .el-button--primary.is-active, 
+.common-conifrm-box .el-button--primary:active,
+.el-cascader .el-input.is-focus .el-input__inner,
+.el-radio__input.is-checked .el-radio__inner,
+.el-radio__inner:hover,
+.el-input.is-active .el-input__inner, .el-input__inner:focus{
+  border-color: #FB683C;
+}
+
+.common-conifrm-box .el-button--primary,
+.common-conifrm-box .el-button--primary:hover,
+.common-conifrm-box .el-button--primary.is-active, 
+.common-conifrm-box .el-button--primary:active,
+.el-radio__input.is-checked .el-radio__inner{
+  background: #FB683C;
+}
+.el-message-box__status.el-icon-warning,
+.el-cascader-menu__item.is-active,
+.el-radio__input.is-checked+.el-radio__label{
+  color: #FB683C;
+}
+.el-input{
+  /*margin-bottom: 20px;*/
+}
+
+/*重置弹出框箭头*/
+.el-popper .popper__arrow::after,
+.el-popper .popper__arrow{
+	border-width: 10px;
+}
+.el-popper[x-placement^=bottom] .popper__arrow::after{
+	margin-left: -10px;
+}
+.el-popper[x-placement^=bottom] .popper__arrow{
+	top: -10px;
+}
+.el-popper[x-placement^=top] .popper__arrow::after{
+    bottom: 1px;
+    margin-left: -10px;
+    border-top-color: #FFF;
+    border-bottom-width: 0;
+}
+.el-popper[x-placement^=top] .popper__arrow{
+  bottom: -10px;
+}
+
+.common-layout-nav{
+  left: 50%;
+  margin-left: -498px;
+}
+.common-layout-nav.el-popper[x-placement^=bottom] .popper__arrow{
+  left: 41%;
+}
+
+/*分页样式*/
+.el-pager li.btn-quicknext, .el-pager li.btn-quickprev,
+.el-pagination{
+  text-align: center;
+  font-size: 16px;
+  color: #FB683C;
+}
+.el-pager li.active+li{
+  border-left:1px solid #D4D4D4;
+}
+
+.el-pager li.active{
+  color: #444;
+  border-color: #fff;
+}
+.el-pagination button:hover,
+body .el-pager li:hover{
+  color: #444;
+  /*border-color: #fff;*/
+}
+
+.el-pager li{
+  min-width: 38px;
+  height: 34px;
+  line-height: 34px;
+  box-sizing:border-box;
+  border: 1px solid #D4D4D4;
+  margin-right:10px; 
+}
+.el-pager li:nth-child(1){
+  margin-left: 10px;
+}
+
+.el-pagination .btn-next, .el-pagination .btn-prev{
+  padding: 0 10px;
+  border: 1px solid #D4D4D4;
+  height: 34px;
+  line-height: 34px;
+  color: #FB683C;
+  position: relative;
+}
+
+.el-pagination .btn-prev{
+  padding-left: 20px;
+}
+.el-pagination .btn-next{
+  padding-right: 20px;
+}
+.el-pagination .btn-next:after,
+.el-pagination .btn-prev:after{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 20px;
+  text-align: center;
+  line-height: 29px;
+  top: 0;
+}
+.el-pagination .btn-prev:after{
+  content: "〈";
+  left: 0;
+}
+.el-pagination .btn-next:after{
+  content: "〉";
+  right: 0;
+}
+
+.el-pagination button:disabled{
+  color: #C0C4CC;
+}
+
+/*重置表单相关*/
+.common-h5-signup .el-textarea__inner,
+.common-h5-signup .el-form-item,
+.common-h5-signup .el-form-item__content,
+.common-h5-signup .el-textarea,
+.common-h5-signup .el-form,
+.common-open-class-detail .mes-box .el-form,
+.common-open-class-detail .mes-box .el-form-item,
+.common-open-class-detail .mes-box .el-form-item__content,
+.common-open-class-detail .mes-box .el-textarea__inner,
+.common-open-class-detail .mes-box .el-textarea{
+  height: 100%;
+}
+.common-h5-signup .el-textarea__inner,
+.common-open-class-detail .mes-box .el-textarea__inner{
+  background: #F7F7F7;
+}
+.el-form--label-left .el-form-item__label,
+.common-open-class-detail .el-form-item__label{
+  color: #444;
+  font-size: 14px;
+  position: relative;
+}
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before{
+  position: absolute;
+  right: 3px;
+}
+.common-open-class-detail-form .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before{
+  position: relative;
+  right: 6px;
+  float: right;
+}
+.common-web-order .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before
+{
+  display: none;
+}
+.common-web-order .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:after{
+  content: "*";
+  color: #F56C6C;
+  margin-left: 3px;
+}
+.common-open-class-detail .el-input__inner{
+  width: 240px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #D4D4D4;
+border-radius: 4px;
+}
+
+/*重置H5表单*/
+.common-h5-signup .el-input__inner{
+    border: none;
+    color: #444;
+}
+
+/*重置个人中心表格*/
+.el-table thead td, .el-table thead th.is-leaf{
+  background: #FFECE7;
+  font-size: 14px;
+color: #444444;
+letter-spacing: 0;
+}
+.el-table tbody tr{
+  /*cursor: pointer;*/
+}
+/*重置进度条颜色*/
+.el-progress-bar__inner{
+  background-color: #FB683C;
+}
+.el-progress-bar__outer{
+  background-color: #c0c0c0;
+}
+
+.el-message--success>p,
+.el-message--warning>p{
+display: inline-block\0;
+}
+.el-message{
+    min-width: 200px;
+  }

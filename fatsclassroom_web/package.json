@@ -1,0 +1,83 @@
+{
+  "name": "vuecli3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "npm run lint && vue-cli-service build --mode build",
+    "build-test": "npm run lint && vue-cli-service build --mode test",
+    "build-pre": "npm run lint && vue-cli-service build --mode pre",
+    "lint": "vue-cli-service lint --fix",
+    "dev": "npm run lint && npm run serve"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "2.7.2",
+    "mockjs": "^1.0.1-beta3",
+    "nprogress": "^0.2.0",
+    "vue": "^2.6.6",
+    "vue-lazyload": "^1.2.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.4",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "rules": {
+      "indent": [
+        2
+      ],
+      "no-var": 2,
+      "prefer-const": 0,
+      "linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ],
+      "no-console": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

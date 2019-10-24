@@ -1,0 +1,332 @@
+/*重置样式公用样式*/
+html {
+overflow-x:auto;
+overflow-y:scroll;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+font-weight:400;
+margin:0;
+padding:0;
+}
+h1, h2, h3, h4, h4, h5 {
+margin:0;
+padding:0;
+}
+body {
+background-color:#FFFFFF;
+color:#666666;
+font-family:"PingFangSC-Regular","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+font-size:12px;
+padding:0;
+text-align:left;
+line-height: 0;
+}
+select {
+font-size:12px;
+}
+table {
+border-collapse:collapse;
+}
+fieldset, img {
+border:0 none;
+}
+img{
+  max-width: 100%;
+}
+fieldset {
+margin:0;
+padding:0;
+}
+fieldset p {
+margin:0;
+padding:0 0 0 8px;
+}
+legend {
+display:none;
+}
+address, caption, em, strong, th, i {
+font-style:normal;
+font-weight:400;
+}
+table caption {
+margin-left:-1px;
+}
+hr {
+border-bottom:1px solid #FFFFFF;
+border-top:1px solid #E4E4E4;
+border-width:1px 0;
+clear:both;
+height:2px;
+margin:5px 0;
+overflow:hidden;
+}
+ol, ul {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+caption, th {
+text-align:left;
+}
+input[type=text]::-ms-clear {
+display:none;
+}
+
+
+/*取消ios点击效果*/
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*清楚浮动*/
+.clear:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clear { *zoom:1; }
+
+/*设置默认字体*/
+body{
+  line-height: 0;
+}
+input,textarea{
+  color: #444;
+  font-size: 14px;
+  overflow: hidden;
+}
+input::-ms-clear{display:none;}/*隐藏文本框叉子*/
+input::-ms-reveal{display:none;}/*隐藏密码框小眼睛*/
+/*公共主体内容宽度*/
+.common-container-width{
+  width: 980px;
+	/*min-width: 960px;*/
+	/*max-width: 1090px;*/
+	margin: 0 auto;
+  overflow: hidden\0;
+}
+.iebug{
+  display: none;
+  display: block\0;
+  position: absolute\0;
+  background: #fff\0;
+  width: 40px\0;
+  height: 26px\0;
+  right: 10px\0;
+  top: 2px\0;
+  z-index: 99999\0;
+}
+
+html,body{
+  width: 100%;
+  min-height: 100%;
+}
+
+.common-h5-index .item img{
+  width: 100%;
+  height: auto;
+}
+
+/*单行文字溢出*/
+.ellipsis{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+  max-height: 20px\0;
+  line-height: 20px\0;
+}
+
+/*多行文字溢出*/
+.ellipsis2{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+}
+
+
+/*.ellipsis2{position: relative; line-height: 20px; max-height: 40px;overflow: hidden;}
+.ellipsis2::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+background: -webkit-linear-gradient(left, transparent, #fff 55%);
+background: -o-linear-gradient(right, transparent, #fff 55%);
+background: -moz-linear-gradient(right, transparent, #fff 55%);
+background: linear-gradient(to right, transparent, #fff 55%);
+}*/
+
+/*手形鼠标*/
+.pointer{
+  cursor: pointer;
+}
+/*公共按钮样式*/
+.btn-sub{
+  display: block;
+  width: 108px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: -0.29px;
+  background: #FB683C;
+  border-radius: 100px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.btn-sub-full{
+  width: 345px;
+  height: 47px;
+  line-height: 47px;
+  border-radius: 2px;
+  font-size: 18px;
+}
+/*向下三角*/
+.icon-triangle{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #868686;
+  position: relative;
+  top: -3px;
+}
+/*公共遮罩层*/
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 99;
+}
+
+.swiper-slide{
+  float: left\0;
+}
+p{
+  word-break: break-all;
+}
+
+
+/*重置滚动条样式*/
+.common-scroll-bar::-webkit-scrollbar,
+body::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+.common-scroll-bar::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.common-scroll-bar::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+html body .active{
+  color: #FB683C;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  font-weight:100;
+  opacity: 0.8;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc;
+  /*font-weight: normal;*/
+  font-style: normal;
+  opacity: 0.8;
+  font-weight:100;
+}
+textarea::-webkit-input-placeholder{
+  /*font-weight: bold;*/
+  font-weight:100;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #ccc;
+  font-weight: normal;
+  opacity: 0.8;
+  font-weight:100;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #ccc;
+  font-weight: normal;
+  opacity: 0.8;
+  font-weight:100;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #ccc;
+  font-weight: normal;
+  opacity: 0.8;
+  font-weight:100;
+}
+
+/*重置cubeui*/
+.cube-pullup-wrapper .before-trigger{
+  color: #868686;
+  font-size: 12px;
+  text-align: center;
+}
+
+.cube-toast-icon{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.cube-dialog-title-def{
+  padding: 5px 0;
+}
+.cube-checkbox_checked .cube-checkbox-ui i{
+  color: #fb683c;
+}
+.cube-checker-item::after{
+  display: none;
+}
+
+/*白色背景*/
+.bgfff{
+  background: #fff;
+}
+
+/*1px细线*/
+
+[class*='van-hairline']::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid #ebedf0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.van-hairline,
+.van-hairline--top,
+.van-hairline--left,
+.van-hairline--right,
+.van-hairline--bottom,
+.van-hairline--surround,
+.van-hairline--top-bottom {
+  position: relative;
+}
+.van-hairline--top::after {
+  border-top-width: 1px;
+}
+.van-hairline--left::after {
+  border-left-width: 1px;
+}
+.van-hairline--right::after {
+  border-right-width: 1px;
+}
+.van-hairline--bottom::after {
+  border-bottom-width: 1px;
+}

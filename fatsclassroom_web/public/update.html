@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <title>优税学院</title>
+    <script>
+    	window.COMMON_DOWNLOAD_URL = {
+          ie: 'https://efats.ele-cloud.cn/group1/M00/00/00/wKgIFVzw8A6AQVYLAQe5XuLCdNA014.zip',
+          chrome: 'https://efats.ele-cloud.cn/group1/M00/00/00/wKgIFVzw8ACAX_68BpAycQx8Ah0902.zip',
+          // logo:'',    //logo url地址
+		};
+    </script>
+    <style>
+    #errApp{
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #errApp .logo{
+    	width: 496px;
+    	margin: 0 auto;
+    }
+    #errApp img.update{
+      width: 496px;
+      margin: 100px auto 20px auto;
+      display: block;
+    }
+    #errApp p{
+      text-align: center;
+      font-size: 16px;
+      color: #666666;
+    }
+    #errApp .btns{
+      width: 600px;
+      min-height: 80px;
+      margin: 100px auto;
+      overflow: hidden;
+
+    }
+    #errApp .btns .ie,
+    #errApp .btns .chrome{
+      float: left;
+      width: 220px;
+      padding-left: 80px;
+      position: relative;
+    }
+    #errApp .btns img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
+    #errApp .btns p{
+      text-align: left;
+      font-size: 16px;
+      color: #444;
+      padding-left: 20px;
+    }
+    #errApp .btns p a{
+      font-size: 12px;
+      color: #229FFF;
+      text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>浏览器js被禁用，请更换浏览器尝试访问本页面</strong>
+    </noscript>
+    <div id="errApp">
+    		<div class="logo">
+		    	<img id="logo" src="./logo.png" alt="">
+		    </div>
+        <img class="update" src="./error-update.png">
+        <p>您正在使用的IE浏览器，版本过低将不能正常浏览和使用 <br>
+      为了华丽丽的体验，快快更新浏览器吧！</p>
+      <div class="btns">
+        <div class="ie">
+          <img src="./ie.png">
+          <p>
+            升级ie新版本
+            <br>
+            <a id="ie" href="">下载 Internet Explorer 11（32位）</a> <br>
+          </p>
+        </div>
+        <div class="chrome">
+          <img src="./chrome.png">
+          <p>
+            使用谷歌浏览器
+            <br>
+            <a id="chrome" href="">下载 Google Chrome（32位）</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script>
+    if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+        // window.location.href = '/index';
+        var oIe = document.getElementById('ie');
+        var oChrome = document.getElementById('chrome');
+        // var oLogo = document.getElementById("logo");
+        oIe.href = window.COMMON_DOWNLOAD_URL.ie;
+        oChrome.href = window.COMMON_DOWNLOAD_URL.chrome;
+    }
+    </script>
+  </body>
+</html>

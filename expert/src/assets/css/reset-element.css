@@ -1,0 +1,142 @@
+/*select样式重置*/
+.el-select {
+    height: 32px;
+}
+
+.el-select>.el-input {
+    height: 100%;
+}
+
+.el-select .el-input__inner {
+    height: 100%;
+}
+
+.el-select .el-input .el-select__caret {
+    line-height: 32px;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+    background: #33C8DF;
+}
+
+.el-select-dropdown__item {
+    color: #333;
+}
+
+.el-select .el-input__inner:focus,
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: #33C8DF;
+}
+
+.el-select-dropdown__item {
+    height: 40px;
+}
+
+.el-select-dropdown__item.selected {
+    color: #333;
+    font-weight: normal;
+}
+
+/*表格样式*/
+.el-table {
+    font-size: 12px;
+    color: #333333;
+}
+
+.el-table th {
+    background-color: #33C8DF;
+}
+
+.el-table thead {
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.el-table--border th,
+.el-table--border td {
+    border-right: 1px solid #D8D8D8;
+}
+
+.el-table th.is-leaf,
+.el-table td {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.el-table th,
+.el-table td {
+    padding: 7px 0;
+    min-width: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+}
+
+/*按钮样式*/
+.el-button {
+    font-size: 14px;
+    color: #33C8DF;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    border: 1px solid #33C8DF;
+}
+
+.el-button:focus,
+.el-button:hover {
+    color: #33C8DF;
+    border: 1px solid #33C8DF;
+    background-color: #ecf5ff;
+}
+
+.el-button--primary {
+    color: #FFF;
+    background-color: #33C8DF;
+    border-color: #33C8DF;
+}
+
+.el-button--primary.is-active,
+.el-button--primary:active {
+    background-color: #33C8DF;
+    border-color: #33C8DF;
+    color: #FFF;
+}
+
+.el-button--small,
+.el-button--small.is-round {
+    padding: 7px 19px;
+}
+
+.el-button--text {
+    font-size: 12px;
+    color: #333333;
+}
+
+.el-button--text:focus,
+.el-button--text:hover {
+    color: #333333;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.el-button--text:active {
+    color: #33C8DF;
+}
+
+.el-button.el-button--text {
+    border: 0;
+}
+
+.el-popover {
+    padding: 0;
+}
+
+/* 分页 */
+.pagination {
+    text-align: right;
+    margin: 10px 0;
+}
