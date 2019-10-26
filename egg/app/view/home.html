@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron">
+  <h2>当前用户 {{ user.name }}</h2>
+  {% if user.age %}
+    <p>  存在年龄：{{user.age}}</p>
+  {% endif %}
+  {% if user.id %}
+  <p>存在id：{{user.id}}</p>
+  {% endif %}
+<ul>
+  {% for item in shoplist %}
+  <li>{{ item.title }}</li>
+{% else %}
+  <li>商品列表为空</li>
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}
