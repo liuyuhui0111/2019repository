@@ -11,7 +11,7 @@
     "dev": "npm run lint && npm run serve"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "element-ui": "2.7.2",
     "mockjs": "^1.0.1-beta3",
     "nprogress": "^0.2.0",
